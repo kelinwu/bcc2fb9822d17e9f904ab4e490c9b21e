@@ -1,0 +1,57 @@
+<!--<div class="jumbotron text-center">
+  <h2>MEAN + SOA</h2>
+  <p class="lead">Welcome to 95 App group</p>
+  <div>
+    <a [routerLink]="['register']" class="btn btn-primary">Register clieck here</a>
+    <a [routerLink]="['login']" class="btn btn-warning">Login clieck here</a>
+    <a [routerLink]="['dashboard']" class="btn btn-danger">dashboard clieck here</a>
+  </div>
+</div>-->
+
+<div class="row">
+  <dir class="col-md-3">
+    <h3>Mongodb</h3>
+    <p><img src="/assets/a63665e6-eeb2-48af-a3cf-a7da01618f56.png" class="banner" /></p>
+  </dir>
+  <dir class="col-md-3">
+    <h3>Express</h3>
+    <p><img src="/assets/ScreenShot2017.png" class="banner" /></p>
+  </dir>
+  <dir class="col-md-3">
+    <h3>Angular</h3>
+    <p><img src="/assets/Screenshortasdfasdfsf.png" class="banner" /></p>
+  </dir>
+  <dir class="col-md-3">
+    <h3>Node</h3>
+    <p><img src="/assets/Screenshortasdfasdfsf.png" class="banner" /></p>
+  </dir>
+</div>
+
+
+<div class="jumbotron text-center">
+  
+<h2>Tweet Dev Blog</h2>
+<!--<div class="row">
+  <div class="col-md-3">Date Created</div>
+  <div class="col-md-6">Tweet Text</div>
+  <div class="col-md-3">Tweeter</div>
+
+</div>-->
+<hr>
+<div id="tweet-list">
+<div *ngFor="let tweet of tweets"  class="tweet-item"> 
+
+  <div [innerHTML]="tweet.oEmbed.html"></div>
+<div class="tweet-details">
+								Tweeted from <span ng-bind-html="tweet.source"></span>
+
+								<!-- play around with rendering different Tweet properties -->
+								 <p>{{tweet.user.screen_name}}</p> 
+								 <p>{{tweet.text}}</p> 
+							</div>
+
+</div>
+</div></div>
+
+
+

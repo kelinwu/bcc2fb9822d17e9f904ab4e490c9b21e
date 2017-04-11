@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row grid-container">
+        <div class="col-md-2">First Name</div>
+        <div class="col-md-2">Last Name</div>
+        <div class="col-md-2">Address</div>
+        <div class="col-md-2">City</div>
+        <div class="col-md-2">State</div>
+        <div class="col-md-2">Order Total</div>
+    </div>
+    <hr>
+    <div class="row grid-container" *ngFor="let customer of customers; trackBy: trackby.customer">
+        <div class="col-md-2">{{customer.firstName}}</div>
+        <div class="col-md-2">{{customer.lastName}}</div>
+        <div class="col-md-2">{{customer.address}}</div>
+        <div class="col-md-2">{{customer.city}}</div>
+        <div class="col-md-2">{{customer.state.name}}</div>
+        <div class="col-md-2">{{customer.orderTotal | currency: 'USD' : true}}</div>
+    </div>
+    <div class="row grid-container" *ngIf="!customers.length">
+        <span>No Records Found</span>
+    </div>
+</div>
