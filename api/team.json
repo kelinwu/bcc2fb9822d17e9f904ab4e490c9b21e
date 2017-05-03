@@ -2,14 +2,16 @@
   {
     "avatar": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAeyAAAAJDQ4NjhjMTk4LTgyZWUtNDQzZS05MWM5LTBiZGM0MTA0YzkwYQ.jpg",
     "name": "Brendan",
+    "note": "hello world!",
     "email": "wjhbrendan@gmail.com",
     "twitter" : "",
     "blog" :"",
     "youtube": ""
    },
    {
-     "avatar": "https://dev.opera.com/articles/extension-developer-interviews-wot/team.jpg",
+    "avatar": "https://dev.opera.com/articles/extension-developer-interviews-wot/team.jpg",
     "name": "Team",
+    "note": "",
     "email": "wjhbrendan@gmail.com",
     "twitter" : "",
     "blog" :"",
